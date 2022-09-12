@@ -32,7 +32,7 @@
               {{ getOptionLabel(option) }}
             </slot>
             <button
-              v-if="multiple"
+              v-if="multiple && !disabled"
               ref="deselectButtons"
               :disabled="disabled"
               type="button"
